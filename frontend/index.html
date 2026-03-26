@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SmartNotes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">📚 SmartNotes</div>
+  <div class="nav-links">
+    <span onclick="scrollToSection('upload')">Upload</span>
+    <span onclick="scrollToSection('browse')">Browse</span>
+    <span onclick="scrollToSection('top')">Top Rated</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- UPLOAD SECTION -->
+  <section id="upload">
+    <h2>Upload Notes</h2>
+    <form id="uploadForm" class="glass">
+      <input id="noteTitle" placeholder="Title" required>
+      <input id="subject" placeholder="Subject" required>
+      <input id="source" placeholder="Source" required>
+      <input id="studentName" placeholder="Your Name" required>
+      <input id="rollNumber" placeholder="Roll No" required>
+      <input type="file" id="pdfFile" required>
+      <button>Upload</button>
+    </form>
+  </section>
+
+  <!-- BROWSE -->
+  <section id="browse">
+    <h2>All Notes</h2>
+    <div id="notesGrid" class="grid"></div>
+  </section>
+
+  <!-- TOP RATED -->
+  <section id="top">
+    <h2>Top Rated</h2>
+    <div id="topGrid" class="grid"></div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
